@@ -1,17 +1,26 @@
-<div style="text-align: center; width: 100vw; height: 30vh; font-size: '40px';"> Chess Tournoment language  </div>
-<div style="width: 100vw; height: 70vh; display: flex; flex-direction: row;">
-  <div style="width: 50vw; height: 70vh;">
+<!-- <div style="text-align: center; width: 100vw; height: 30vh; font-size: '40px';"> Chess Tournoment language  </div> -->
+<div
+  style="
+    width: 99vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+  "
+>
+  <div style="width: 49vw; height: 95vh;">
     <ngx-monaco-editor
       style="height: 100%; width: 100%; text-align: left;"
-      [options]="editorOptions"
+      [options]=" { language: 'xml', fontSize: 20 }"
       [(ngModel)]="code"
     ></ngx-monaco-editor>
   </div>
 
-  <div style="width: 50vw; height: 70vh;">
+  <div style="width: 49vw; height: 95vh;">
     <ngx-monaco-editor
       style="height: 100%; width: 100%; text-align: left;"
-      [options]=""
+      [options]=" { language: 'json', fontSize: 20 }"
       [ngModel]="code | parse"
     ></ngx-monaco-editor>
   </div>
