@@ -6,6 +6,5 @@ import { Component } from "@angular/core";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  editorOptions = { language: "xml", fontSize: 20 };
   code: string = "";
 }
